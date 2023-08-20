@@ -1,0 +1,21 @@
+q1.Write a blog on Difference between HTTP1.1 vs HTTP2
+
+HTTP stands for hypertext transfer protocol & it is used in client-server communication
+
+HTTP/1.1:
+It is the first standardized version of HTTP, was introduced in 1997.
+It presented significant performance optimizations (over HTTP/0.9 and HTTP/1.0) and 
+transformed the way requests and responses were exchanged between clients and servers.
+It works on the textual format.
+There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources.
+It uses requests resource Inlining for use getting multiple pages.
+It compresses data by itself.
+
+HTTP/2:
+ At the beginning of 2010, Google introduced an experimental protocol, SPDY,
+ which supported multiplexing (multiple requests/responses sent and received asynchronously over a single TCP connection)
+ but as it gained traction IETF’s HTTP Working Group came up with HTTP/2 in 2015, which is based on the SPDY protocol.
+It works on the binary protocol.
+It allows multiplexing so one TCP connection is required for multiple requests.
+It uses PUSH frame by server that collects all multiple pages.
+It uses HPACK for data compression.
